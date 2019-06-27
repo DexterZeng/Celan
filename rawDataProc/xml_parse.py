@@ -45,6 +45,8 @@ for line in entityinput:
     strs = line.strip().split('\t')
     entityID[strs[0]] = strs[1]
 print (len(entityID))
+
+# test.xml is the output file after converting the original evaluation answer file into the xml form.
 DOMTree = xml.dom.minidom.parse("test.xml")
 collection = DOMTree.documentElement
 
